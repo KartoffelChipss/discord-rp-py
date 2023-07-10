@@ -1,0 +1,15 @@
+{
+    "state": "A very nice custom State!",
+    "details": "My very nice details!",
+
+    "buttons": {
+        "1": {
+            "label": "Meine Wbsite",
+            "url": "https://strassburger.org/"
+        },
+        "2": {
+            "label": "Mein Discord",
+            "url": "https://strassburger.org/"
+        }
+    }
+}
