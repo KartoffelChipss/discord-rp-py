@@ -1,15 +1,29 @@
 {
-    "state": "A very nice custom State!",
-    "details": "My very nice details!",
+    "preset": "none",
 
-    "buttons": {
-        "1": {
-            "label": "Meine Wbsite",
+    "details": "",
+    "state": "My local time:",
+
+    "large_image": "communitydiscord",
+    "large_text": "",
+
+    "small_image": "",
+    "small_text": "",
+
+    "party_players": 2,
+    "party_maxplayers": -1,
+
+    "start_time": "localtime",
+    "customtimestamp": 1657533597,
+
+    "buttons": [
+        {
+            "label": "Website",
             "url": "https://strassburger.org/"
         },
-        "2": {
-            "label": "Mein Discord",
-            "url": "https://strassburger.org/"
+        {
+            "label": "Discord",
+            "url": "https://strassburger.org/discord"
         }
-    }
+    ]
 }
