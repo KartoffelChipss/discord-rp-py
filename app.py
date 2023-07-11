@@ -78,6 +78,40 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
     def save(self):
         print("Saved!: ", self.lb_appid.text())
+        configFile = Path("./config.json")
+        if (configFile.is_file() == True):
+            newConfig = {
+                "preset": "none",
+                
+                "details": self.input_details.text(),
+                "state": self.input_state.text(),
+
+                "large_image": "",
+                "large_text": "",
+
+                "small_image": "",
+                "small_text": "",
+
+                "party_players": 2,
+                "party_maxplayers": -1,
+
+                "start_time": "timesincestart",
+                "customtimestamp": 0,
+
+                "buttons": [
+                    {
+                        "label": "Button 1",
+                        "url": "https://strassburger.org/"
+                    },
+                    {
+                        "label": "Button 2",
+                        "url": "https://strassburger.org/"
+                    }
+                ]
+            }
+
+            with open("config.json", "w") as fp:
+                json.dump(newConfig, fp)
 
 app = QApplication( sys.argv + ['-platform', 'windows:darkmode=2'] )
 
