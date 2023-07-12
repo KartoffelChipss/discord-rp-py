@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.input_appid = QLineEdit(self.centralwidget)
         self.input_appid.setObjectName(u"input_appid")
-        self.input_appid.setGeometry(QRect(40, 50, 221, 31))
+        self.input_appid.setGeometry(QRect(20, 40, 241, 31))
         font = QFont()
         font.setPointSize(10)
         font.setBold(False)
@@ -44,9 +44,10 @@ class Ui_MainWindow(object):
 "border-radius: 7px;\n"
 "padding: 0 7px;\n"
 "margin-top: 2px;")
+        self.input_appid.setMaxLength(19)
         self.lb_appid = QLabel(self.centralwidget)
         self.lb_appid.setObjectName(u"lb_appid")
-        self.lb_appid.setGeometry(QRect(40, 30, 221, 20))
+        self.lb_appid.setGeometry(QRect(20, 20, 221, 20))
         self.lb_appid.setFont(font)
         self.lb_appid.setStyleSheet(u"background-color: transparent;")
         self.select_presets = QComboBox(self.centralwidget)
@@ -54,7 +55,7 @@ class Ui_MainWindow(object):
         self.select_presets.addItem("")
         self.select_presets.addItem("")
         self.select_presets.setObjectName(u"select_presets")
-        self.select_presets.setGeometry(QRect(280, 50, 231, 31))
+        self.select_presets.setGeometry(QRect(280, 40, 251, 31))
         self.select_presets.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
 "border-radius: 7px;\n"
@@ -62,45 +63,47 @@ class Ui_MainWindow(object):
 "margin-top: 2px;")
         self.lb_presets = QLabel(self.centralwidget)
         self.lb_presets.setObjectName(u"lb_presets")
-        self.lb_presets.setGeometry(QRect(280, 30, 231, 16))
+        self.lb_presets.setGeometry(QRect(280, 20, 251, 16))
         self.lb_presets.setFont(font)
         self.lb_presets.setStyleSheet(u"background-color: transparent;")
         self.lb_details = QLabel(self.centralwidget)
         self.lb_details.setObjectName(u"lb_details")
-        self.lb_details.setGeometry(QRect(40, 100, 211, 20))
+        self.lb_details.setGeometry(QRect(20, 90, 211, 20))
         self.lb_details.setFont(font)
         self.lb_details.setStyleSheet(u"background-color: transparent;")
         self.input_details = QLineEdit(self.centralwidget)
         self.input_details.setObjectName(u"input_details")
-        self.input_details.setGeometry(QRect(40, 120, 471, 31))
+        self.input_details.setGeometry(QRect(20, 110, 511, 31))
         self.input_details.setFont(font)
         self.input_details.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
 "border-radius: 7px;\n"
 "padding: 0 7px;\n"
 "margin-top: 2px;")
+        self.input_details.setMaxLength(400)
         self.lb_state = QLabel(self.centralwidget)
         self.lb_state.setObjectName(u"lb_state")
-        self.lb_state.setGeometry(QRect(40, 170, 221, 20))
+        self.lb_state.setGeometry(QRect(20, 160, 221, 20))
         self.lb_state.setFont(font)
         self.lb_state.setStyleSheet(u"background-color: transparent;")
         self.input_state = QLineEdit(self.centralwidget)
         self.input_state.setObjectName(u"input_state")
-        self.input_state.setGeometry(QRect(40, 190, 221, 31))
+        self.input_state.setGeometry(QRect(20, 180, 241, 31))
         self.input_state.setFont(font)
         self.input_state.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
 "border-radius: 7px;\n"
 "padding: 0 7px;\n"
 "margin-top: 2px;")
+        self.input_state.setMaxLength(400)
         self.lb_party = QLabel(self.centralwidget)
         self.lb_party.setObjectName(u"lb_party")
-        self.lb_party.setGeometry(QRect(280, 170, 261, 16))
+        self.lb_party.setGeometry(QRect(290, 160, 261, 16))
         self.lb_party.setFont(font)
         self.lb_party.setStyleSheet(u"background-color: transparent;")
         self.number_partyMin = QSpinBox(self.centralwidget)
         self.number_partyMin.setObjectName(u"number_partyMin")
-        self.number_partyMin.setGeometry(QRect(280, 191, 71, 31))
+        self.number_partyMin.setGeometry(QRect(290, 181, 71, 31))
         self.number_partyMin.setFont(font)
         self.number_partyMin.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
@@ -111,7 +114,7 @@ class Ui_MainWindow(object):
         self.number_partyMin.setValue(-1)
         self.number_partyMax = QSpinBox(self.centralwidget)
         self.number_partyMax.setObjectName(u"number_partyMax")
-        self.number_partyMax.setGeometry(QRect(380, 190, 71, 31))
+        self.number_partyMax.setGeometry(QRect(390, 180, 71, 31))
         self.number_partyMax.setFont(font)
         self.number_partyMax.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
@@ -122,7 +125,7 @@ class Ui_MainWindow(object):
         self.number_partyMax.setValue(-1)
         self.divider = QLabel(self.centralwidget)
         self.divider.setObjectName(u"divider")
-        self.divider.setGeometry(QRect(360, 190, 20, 31))
+        self.divider.setGeometry(QRect(370, 180, 20, 31))
         font1 = QFont()
         font1.setPointSize(18)
         font1.setBold(False)
@@ -130,12 +133,12 @@ class Ui_MainWindow(object):
         self.divider.setStyleSheet(u"background-color: transparent;")
         self.lb_timestamp = QLabel(self.centralwidget)
         self.lb_timestamp.setObjectName(u"lb_timestamp")
-        self.lb_timestamp.setGeometry(QRect(40, 240, 231, 20))
+        self.lb_timestamp.setGeometry(QRect(20, 230, 231, 20))
         self.lb_timestamp.setFont(font)
         self.lb_timestamp.setStyleSheet(u"background-color: transparent;")
         self.timestampBtns = QGroupBox(self.centralwidget)
         self.timestampBtns.setObjectName(u"timestampBtns")
-        self.timestampBtns.setGeometry(QRect(40, 260, 221, 101))
+        self.timestampBtns.setGeometry(QRect(20, 250, 221, 101))
         self.timestampBtns.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"
 "border-radius: 7px;\n"
@@ -165,14 +168,14 @@ class Ui_MainWindow(object):
         self.radio_custom.setStyleSheet(u"background-color: none;")
         self.frame = QFrame(self.centralwidget)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(20, 20, 511, 561))
+        self.frame.setGeometry(QRect(10, 10, 531, 581))
         self.frame.setStyleSheet(u"background-color: #111214;\n"
-"border-radius: 12px;")
+"border-radius: 7px;")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
         self.button_save = QPushButton(self.frame)
         self.button_save.setObjectName(u"button_save")
-        self.button_save.setGeometry(QRect(20, 500, 211, 41))
+        self.button_save.setGeometry(QRect(10, 530, 211, 41))
         font2 = QFont()
         font2.setPointSize(12)
         font2.setBold(True)
@@ -182,7 +185,7 @@ class Ui_MainWindow(object):
         self.date_customtimestamp = QDateTimeEdit(self.frame)
         self.date_customtimestamp.setObjectName(u"date_customtimestamp")
         self.date_customtimestamp.setEnabled(False)
-        self.date_customtimestamp.setGeometry(QRect(20, 350, 221, 31))
+        self.date_customtimestamp.setGeometry(QRect(10, 350, 221, 31))
         self.date_customtimestamp.setFont(font)
         self.date_customtimestamp.setStyleSheet(u"background-color:  #4E5058;\n"
 "border: none;\n"

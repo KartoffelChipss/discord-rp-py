@@ -34,9 +34,9 @@ background-color: #242428;</string>
    <widget class="QLineEdit" name="input_appid">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>50</y>
-      <width>221</width>
+      <x>20</x>
+      <y>40</y>
+      <width>241</width>
       <height>31</height>
      </rect>
     </property>
@@ -57,12 +57,15 @@ margin-top: 2px;</string>
     <property name="text">
      <string>awdswadsdwas</string>
     </property>
+    <property name="maxLength">
+     <number>19</number>
+    </property>
    </widget>
    <widget class="QLabel" name="lb_appid">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>30</y>
+      <x>20</x>
+      <y>20</y>
       <width>221</width>
       <height>20</height>
      </rect>
@@ -85,8 +88,8 @@ margin-top: 2px;</string>
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>50</y>
-      <width>231</width>
+      <y>40</y>
+      <width>251</width>
       <height>31</height>
      </rect>
     </property>
@@ -117,8 +120,8 @@ margin-top: 2px;</string>
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>30</y>
-      <width>231</width>
+      <y>20</y>
+      <width>251</width>
       <height>16</height>
      </rect>
     </property>
@@ -139,8 +142,8 @@ margin-top: 2px;</string>
    <widget class="QLabel" name="lb_details">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>100</y>
+      <x>20</x>
+      <y>90</y>
       <width>211</width>
       <height>20</height>
      </rect>
@@ -162,9 +165,9 @@ margin-top: 2px;</string>
    <widget class="QLineEdit" name="input_details">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>120</y>
-      <width>471</width>
+      <x>20</x>
+      <y>110</y>
+      <width>511</width>
       <height>31</height>
      </rect>
     </property>
@@ -185,12 +188,15 @@ margin-top: 2px;</string>
     <property name="text">
      <string>My very nice details!</string>
     </property>
+    <property name="maxLength">
+     <number>400</number>
+    </property>
    </widget>
    <widget class="QLabel" name="lb_state">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>170</y>
+      <x>20</x>
+      <y>160</y>
       <width>221</width>
       <height>20</height>
      </rect>
@@ -212,9 +218,9 @@ margin-top: 2px;</string>
    <widget class="QLineEdit" name="input_state">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>190</y>
-      <width>221</width>
+      <x>20</x>
+      <y>180</y>
+      <width>241</width>
       <height>31</height>
      </rect>
     </property>
@@ -235,12 +241,15 @@ margin-top: 2px;</string>
     <property name="text">
      <string>A very nice custom State!</string>
     </property>
+    <property name="maxLength">
+     <number>400</number>
+    </property>
    </widget>
    <widget class="QLabel" name="lb_party">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>170</y>
+      <x>290</x>
+      <y>160</y>
       <width>261</width>
       <height>16</height>
      </rect>
@@ -262,8 +271,8 @@ margin-top: 2px;</string>
    <widget class="QSpinBox" name="number_partyMin">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>191</y>
+      <x>290</x>
+      <y>181</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -292,8 +301,8 @@ margin-top: 2px;</string>
    <widget class="QSpinBox" name="number_partyMax">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>190</y>
+      <x>390</x>
+      <y>180</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -322,8 +331,8 @@ margin-top: 2px;</string>
    <widget class="QLabel" name="divider">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>190</y>
+      <x>370</x>
+      <y>180</y>
       <width>20</width>
       <height>31</height>
      </rect>
@@ -345,8 +354,8 @@ margin-top: 2px;</string>
    <widget class="QLabel" name="lb_timestamp">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>240</y>
+      <x>20</x>
+      <y>230</y>
       <width>231</width>
       <height>20</height>
      </rect>
@@ -368,8 +377,8 @@ margin-top: 2px;</string>
    <widget class="QGroupBox" name="timestampBtns">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>260</y>
+      <x>20</x>
+      <y>250</y>
       <width>221</width>
       <height>101</height>
      </rect>
@@ -486,15 +495,15 @@ border: none;</string>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>511</width>
-      <height>561</height>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>581</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: #111214;
-border-radius: 12px;</string>
+border-radius: 7px;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -505,8 +514,8 @@ border-radius: 12px;</string>
     <widget class="QPushButton" name="button_save">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>500</y>
+       <x>10</x>
+       <y>530</y>
        <width>211</width>
        <height>41</height>
       </rect>
@@ -532,7 +541,7 @@ font-weight: 500;</string>
      </property>
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>350</y>
        <width>221</width>
        <height>31</height>

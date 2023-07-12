@@ -73,6 +73,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         
         self.number_partyMax.setButtonSymbols(QAbstractSpinBox.NoButtons)
         self.number_partyMin.setButtonSymbols(QAbstractSpinBox.NoButtons)
+        self.date_customtimestamp.setDisabled(True)
         
         self.button_save.clicked.connect(self.save)
         
